@@ -10,17 +10,25 @@ namespace BoucleTestConsoleApp1
     {
         static void Main(string[] args)
         {
-           
-            int i;
-            Console.WriteLine("Nombres pairs entre 1 et 10 :");
-            for ( i = 0; i <= 10; i++)
-           {
-                if (i % 2 == 0)
-                    Console.WriteLine(i);
-           }
-             Console.ReadKey();
+
+            int i=1;
+            int n = 10;
+            int somme= 0;
+
+            while (i <= n)
+             {       
+                    somme += i;
+                    i++;
+                    
+                }
+            Console.WriteLine(somme);
+            Console.ReadKey();
+
 
             
+
+
+
         }
     }
 }
