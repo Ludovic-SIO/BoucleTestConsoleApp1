@@ -12,16 +12,16 @@ namespace BoucleTestConsoleApp1
         {
 
             int i=1;
-            int n = 10;
-            int somme= 0;
+            int n = 5;
+            int factorielle= 1;
 
-            while (i <= n)
+            while (factorielle != n)
              {       
-                    somme += i;
-                    i++;
                     
-                }
-            Console.WriteLine(somme);
+                    factorielle += 1;
+                    i=i*factorielle;
+              }
+            Console.WriteLine(i);
             Console.ReadKey();
 
 
